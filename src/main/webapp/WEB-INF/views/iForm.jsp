@@ -13,7 +13,7 @@
 		<h2>전화번호 등록폼</h2>
 		<p>전화번호를 등록하는 폼 입니다.</p>
 		
-		<form action="${pageContext.request.contextPath}/pbc"  method="get">
+		<form action="${pageContext.request.contextPath}"  method="get">
 			<label>이름(name)</label>
 			<input type="text" name="name" value="${requestScope.pVO.name}">
 			<br>

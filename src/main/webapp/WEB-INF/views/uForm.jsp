@@ -15,7 +15,7 @@
 	 
 	    
   <!--  <form action="/pbook3/pbc"  method="get">  pbook3도 바뀔수있다-->
-		<form action="${pageContext.request.contextPath}/pbc"  method="get">
+		<form action="${pageContext.request.contextPath}"  method="get">
 			<label>이름(name)</label>
 			<input type="text" name="name" value="">
 			<br>

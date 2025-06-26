@@ -28,7 +28,7 @@ public class PhonebookController {
 	//method normal
 	
 	// test
-	@RequestMapping(value="test", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/test", method= {RequestMethod.GET, RequestMethod.POST})
 	public String test() {
 		
 		System.out.println("phonebook.test()");
@@ -37,7 +37,7 @@ public class PhonebookController {
 	}
 	
 	//list
-	@RequestMapping(value="list", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/list", method= {RequestMethod.GET, RequestMethod.POST})
 	public String list(Model model) {
 		System.out.println("PhonebookController.list()");
 		
@@ -49,7 +49,7 @@ public class PhonebookController {
 	}
 	
 	//iForm
-	@RequestMapping(value="iForm", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/iForm", method= {RequestMethod.GET, RequestMethod.POST})
 	public String iForm() {
 		System.out.println("PhonebookController.iForm()");
 		
@@ -57,7 +57,7 @@ public class PhonebookController {
 	}
 	
 	//insert
-	@RequestMapping(value="insert", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/insert", method= {RequestMethod.GET, RequestMethod.POST})
 	public String insert(@ModelAttribute PhonebookVO phonebookvo) {
 		System.out.println("PhonebookController.insert()");
 		
@@ -67,7 +67,7 @@ public class PhonebookController {
 	}
 	
 	//delete
-	@RequestMapping(value="delete", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/delete", method= {RequestMethod.GET, RequestMethod.POST})
 	public String delete(@ModelAttribute int phonebookvo) {
 		System.out.println("PhonebookController.delete()");
 		
@@ -77,14 +77,14 @@ public class PhonebookController {
 	}
 	
 	//uForm
-	@RequestMapping(value="uForm", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/uForm", method= {RequestMethod.GET, RequestMethod.POST})
 	public String uForm() {
 		System.out.println("PhonebookController.uForm()");
 		
 		return "updateform";
 	}
 	//update
-	@RequestMapping(value="update", method= {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value="/update", method= {RequestMethod.GET, RequestMethod.POST})
 	public String update(@ModelAttribute PhonebookVO phonebookvo) {
 		System.out.println("PhonebookController.update()");
 		
